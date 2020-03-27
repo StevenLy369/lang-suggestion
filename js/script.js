@@ -11,6 +11,8 @@ $(document).ready(function(){
         if (programming === "no"){
             $("#formOne").fadeOut();
             $("#nothing").show();
+            var noResult = (name + ", Sorry mate. This might not be for you.")
+            $(".playerName").text(noResult)
             $("#errorForm").hide();
             
 
