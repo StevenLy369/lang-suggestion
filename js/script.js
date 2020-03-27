@@ -7,18 +7,16 @@ $(document).ready(function(){
 
 
         if (programming == "no"){
-            console.log("cat");
+            $("#nothing").show();
 
             
          } else {
-             console.log("dog")
+             $("#javascript").show();
+             console.log("javascript");
          }
     
   
   
-        console.log(name);
-        console.log(animal);
-        console.log(food);
         
 
     $("#formOne").hide();
