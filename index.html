@@ -18,9 +18,14 @@
     </div>
 
     <form id="formOne">
-       <div class="form-group">
+       
             <label for="name">Please enter your name</label>
             <input type="text" id="name">
+
+            <label for="programming">Do you enjoy programming?</label>
+            <input type="radio">
+            Yes!<input type="radio" name="programming" value="yes">
+            No!<input type="radio" name="programming" value="no"> </br>
 
             <label for="animal">What kind animal do you like?</label>
             <select  id="animal">
@@ -30,16 +35,29 @@
 
             </select>
 
+            <label for="food">Your favorite food?</label>
+            <select id="food">
+                <option>Pizza</option>
+                <option>Taco Bell</option>
+                <option>McDonalds</option>
+            </select>
 
 
 
 
-        </div>
+
        
         <button type ="submit">Submit</button>
 
 
     </form>
+
+
+    <div class = result>
+    <h1 id="javascript">Javascript</h1>
+    <h1 id = "swift"></h1>
+    <h1 id ="C"></h1>
+    </div>
 
     
 
