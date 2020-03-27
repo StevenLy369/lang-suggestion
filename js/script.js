@@ -5,8 +5,12 @@ $(document).ready(function(){
     
   
   
+
+
+    $("#formOne").hide();
     event.preventDefault();
     console.log(name);
     console.log(animal);
+    
     });
   });
