@@ -1,6 +1,9 @@
 body{
     text-align: center;
     align-items: center;
+    font-family: cursive;
+    padding: 10px;
+    font-size: 30px;
 }
 
 .result{
