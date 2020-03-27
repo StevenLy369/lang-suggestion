@@ -20,7 +20,7 @@ $(document).ready(function(){
             alert("Please select all options");
             $("#errorForm").show();
 
-       } else if (animal == "Snakes") {
+        } else if (animal == "Snakes") {
             $("#python").show();
             $("#formOne").fadeOut();
             var results = (name + ", You should try out:")
@@ -49,9 +49,7 @@ $(document).ready(function(){
             $(".playerName").text(results);
             $("#errorForm").hide();
         }
-
-    // $("#formOne").fadeOut();
-    event.preventDefault();
+        event.preventDefault();
     
     
     });
