@@ -1,112 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/script.js"></script>
-    <title>Language Suggester</title>
-
-</head>
-<body>
-
-    <div class ="container">
-    <div class="jumbotron">
-        <h1>Welcome to the </br>Program Language Suggester</h1>
-    </div>
-
-    <form id="formOne">
-        <div class="rows">
-            <div class="col-1 col-sm-12">
-                <label for="name">Please enter your name</label>
-                <input type="text" id="name">
-            </div>
-
-            <div class="col-1 col-sm-12"></div>
-                <label for="programming">Do you enjoy programming?</label>
-                    Yes<input type="radio" name="programming" value="yes">
-                    No<input type="radio" name="programming" value="no">
-            </div>
-
-            <div class="col-1 col-sm-12">
-                <label for="romantic">Do you enjoy long walks on the beach?</label>
-                
-                    Yes<input type="radio" name="romantic" value="yes">
-                    No<input type="radio" name="romantic" value="no">
-            </div>
-
-            <div class="col-1 col-sm-12">
-                <label for="animal">What kind animal do you like?</label>
-                <select id="animal">
-                    <option>Cats</option>
-                    <option>Llamas</option>
-                    <option>Snakes</option>
-
-                </select>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.4.1.js"></script>
+      <script src="js/script.js"></script>
+      <title>Language Suggester</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="jumbotron">
+            <h1>Welcome to the </br>Program Language Suggester</h1>
+         </div>
+         <form id="formOne">
+            <div class="rows">
+               <div class="col-1 col-sm-12">
+                  <label for="name">Please enter your name</label>
+                  <input type="text" id="name">
+               </div>
+               <div class="col-1 col-sm-12"></div>
+               <label for="programming">Do you enjoy programming?</label>
+               Yes<input type="radio" name="programming" value="yes">
+               No<input type="radio" name="programming" value="no">
             </div>
             <div class="col-1 col-sm-12">
-                <label for="food">Your favorite food?</label>
-                <select id="food">
-                    <option>Pizza</option>
-                    <option>Taco Bell</option>
-                    <option>McDonalds</option>
-                </select>
+               <label for="romantic">Do you enjoy long walks on the beach?</label>
+               Yes<input type="radio" name="romantic" value="yes">
+               No<input type="radio" name="romantic" value="no">
             </div>
-
-
-
-            <button type ="submit">Submit</button>
-        </div>
-    </form>
-
-    <div class="well">
-    <div class = result id ="javascript">
-        <h2 class="playerName"></h2>
-        <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></h1>
-        <img src="https://iconsplace.com/wp-content/uploads/_icons/ffe500/256/png/js-icon-19-256.png" alt="js icon" srcset="">
-    </div>
-
-    <div class = result id ="swift">
-        <h2 class="playerName"></h2>
-        <h1><a href="https://swift.org/documentation/" target="_blank">Swift</a></h1>
-        <img src="https://cdn4.iconfinder.com/data/icons/logos-3/1300/swift-seeklogo-512.png" alt="swift icon" srcset="">
-        </div>
-
-    <div class = result id ="c">
-        <h2 class="playerName"></h2>
-        <h1><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a></h1>
-        <img src="https://cdn.iconscout.com/icon/free/png-256/csharp-1-1175241.png" alt="" srcset="">
-    </div>
-
-
-    <div class = result id ="nothing">
-        <h2 class="playerName"></h2>
-        <img src="https://media.giphy.com/media/m95tsXIAAAK4M/giphy.gif" alt="" srcset="">
-
-    </div>
-
-    <div class = result id="errorForm">
-        <h1>Stanley Hudson commands you to answer all the questions.</h1>
-        <img src="https://media1.giphy.com/media/7hHzmMCS2MCgE/source.gif" alt="" srcset="">
-    </div>
-
-
-    <div class = result id ="python">
-        <h2 class="playerName"></h2>
-        <h1><a href="https://docs.python.org/3/" target="_blank">Python</a></h1>
-        <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="" srcset="">
-    </div>
-    
-    
-</div>
-    
-
-
-
-
-    </div>
-
-</body>
+            <div class="col-1 col-sm-12">
+               <label for="animal">What kind animal do you like?</label>
+               <select id="animal">
+                  <option>Cats</option>
+                  <option>Llamas</option>
+                  <option>Snakes</option>
+               </select>
+            </div>
+            <div class="col-1 col-sm-12">
+               <label for="food">Your favorite food?</label>
+               <select id="food">
+                  <option>Pizza</option>
+                  <option>Taco Bell</option>
+                  <option>McDonalds</option>
+               </select>
+            </div>
+            <button type="submit">Submit</button>
+      </div>
+      </form>
+      <div class="well">
+         <div class=result id="javascript">
+            <h2 class="playerName"></h2>
+            <h1><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></h1>
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffe500/256/png/js-icon-19-256.png" alt="js icon"
+               srcset="">
+         </div>
+         <div class=result id="swift">
+            <h2 class="playerName"></h2>
+            <h1><a href="https://swift.org/documentation/" target="_blank">Swift</a></h1>
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/1300/swift-seeklogo-512.png" alt="swift icon"
+               srcset="">
+         </div>
+         <div class=result id="c">
+            <h2 class="playerName"></h2>
+            <h1><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a></h1>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/csharp-1-1175241.png" alt="" srcset="">
+         </div>
+         <div class=result id="nothing">
+            <h2 class="playerName"></h2>
+            <img src="https://media.giphy.com/media/m95tsXIAAAK4M/giphy.gif" alt="" srcset="">
+         </div>
+         <div class=result id="errorForm">
+            <h1>Stanley Hudson commands you to answer all the questions.</h1>
+            <img src="https://media1.giphy.com/media/7hHzmMCS2MCgE/source.gif" alt="" srcset="">
+         </div>
+         <div class=result id="python">
+            <h2 class="playerName"></h2>
+            <h1><a href="https://docs.python.org/3/" target="_blank">Python</a></h1>
+            <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt=""
+               srcset="">
+         </div>
+      </div>
+      </div>
+   </body>
 </html>
